@@ -1,3 +1,3 @@
-module github.com/7280ayubihs/learning-go
+module learning-go
 
 go 1.18

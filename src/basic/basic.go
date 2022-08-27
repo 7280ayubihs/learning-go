@@ -1,21 +1,11 @@
-// Go言語のソースコードは、必ず package 文で始まる。
-// ソースコードは「パッケージ」でグルーピングされる。
-// hello.go は mainパッケージに属することを宣言している。
-package main
+package basic
 
-// 他パッケージ(fmt)をインポートする。
-// つまりは、C言語のinclude文のこと。
 import (
 	"fmt"
 	"unicode/utf8"
 )
 
-// func が関数宣言キーワード
-// main関数は他の言語と同じく、プログラム実行時に最初に呼ばれる関数。
-func main() { // 波カッコはfuncキーワードと同じ行に記載するルール
-	// お約束のハローワールド。
-	fmt.Println("Hello, World!")
-
+func BasicExecute() {
 	// --- 論理値型 ---
 	var b bool = true
 	fmt.Println(b)
@@ -65,11 +55,8 @@ func main() { // 波カッコはfuncキーワードと同じ行に記載する�
 	fmt.Println(ui32)
 	fmt.Println(f32)
 	fmt.Println(str3)
-
-	// --- 演算子 ---
-	// TODO
 }
 
-/*
-セミコロンは原則として不要（※正確には省略可能）
-*/
+func BasicExecuteDummy() {
+	// なにもしない。
+}
